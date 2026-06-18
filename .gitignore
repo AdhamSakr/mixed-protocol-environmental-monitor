@@ -1,0 +1,13 @@
+# MCU Build Outputs
+Debug/
+Release/
+*.elf
+*.list
+*.map
+*.o
+*.su
+*.cyclo
+*.d
+
+# Local IDE/Toolchain settings
+.settings/
