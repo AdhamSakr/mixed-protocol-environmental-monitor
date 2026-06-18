@@ -13,7 +13,7 @@ A bare-metal STM32 firmware application that monitors environmental parameters u
 * **HAL Library Integration:** Built upon the STM32 HAL framework leveraging automated code generation via `Mixed_Protocol_Environmental_Monitor.ioc` for clock trees and basic register mapping.
 
 ## 📺 Project Demo
-<video src="media/demo.mp4" width="100%" controls autoplay loop muted></video>
+[Watch the Hardware Demo](media/demo.mp4)
 
 ## 📂 Project Structure
 * `Core/Src/main.c`: Core application logic, peripheral initializations, and the main telemetry reading loop.
