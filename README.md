@@ -12,7 +12,7 @@ A bare-metal STM32 firmware application that monitors environmental parameters u
 * **SPI1 (Master Mode, Tx-Only Simplex):** Interfaced with the SH1106 OLED display via a high-speed SPI bus with custom GPIO controls for Reset (`OLED_RES`) and Data/Command (`OLED_DC`) selection to maximize screen refresh rates.
 * **HAL Library Integration:** Built upon the STM32 HAL framework leveraging automated code generation via `Mixed_Protocol_Environmental_Monitor.ioc` for clock trees and basic register mapping.
 
-## 📺 Project Demo
+## Project Demo
 [Watch the Hardware Demo](media/demo.mp4)
 
 ## Project Structure
