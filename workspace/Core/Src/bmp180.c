@@ -44,7 +44,7 @@ unsigned long B7 = 0;
 long Press = 0;
 long Temp = 0;
 
-#define atmPressure 101325 //Pa
+#define atmPressure 101600 //Pa
 
 
 
@@ -139,14 +139,14 @@ float BMP180_GetPressure (int oss)
 	X2 = (-7357*Press)/(pow(2,16));
 	Press = Press + (X1+X2+3791)/(pow(2,4));
 
-	return Press;
+	return Press/100.0f;
 }
 
 
 float BMP180_GetAltitude (int oss)
 {
 	BMP180_GetPressure (oss);
-	return 44330*(1-(pow((Press/(float)atmPressure), 0.19029495718)));
+	return 44330*(1.0f-(pow((Press/(float)atmPressure), 0.19029495718f)));
 }
 
 void BMP180_Init (void)
